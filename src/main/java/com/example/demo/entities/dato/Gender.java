@@ -7,44 +7,32 @@ import javax.persistence.*;
 public class Gender {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idGender;
     @Column(name = "name",nullable = false,length = 30)
-    private String name;
-    @Column(name = "description",nullable = false,length = 30)
-    private String description;
-
+    private String nameGender;
     // hopoa
     public Gender() {
 
     }
 
-    public Gender(int id, String name, String description) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
+    public Gender(int id, String name) {
+        this.idGender = id;
+        this.nameGender = name;
     }
 
     public int getId() {
-        return id;
+        return idGender;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.idGender = id;
     }
 
     public String getName() {
-        return name;
+        return nameGender;
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+        this.nameGender = name;
     }
 }

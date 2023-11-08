@@ -3,33 +3,24 @@ package com.example.demo.dtos;
 import javax.persistence.Column;
 
 public class GenderDTO {
-    private int id;
+    private int idGender;
 
-    private String name;
-
-    private String description;
+    private String nameGender;
 
     public int getId() {
-        return id;
+        return idGender;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.idGender = id;
     }
 
     public String getName() {
-        return name;
+        return nameGender;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nameGender = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 }
