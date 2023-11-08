@@ -46,7 +46,6 @@ public class GenderController {
     }
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
     public List<GenderDTO> listar() {
         return gS.listar().stream().map(x->{
             ModelMapper m=new ModelMapper();

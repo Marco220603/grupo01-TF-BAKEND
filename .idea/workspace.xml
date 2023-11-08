@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="ag" />
+    <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +20,22 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/grupo01-TF-BACKEND" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Marco220603"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d64baceb-977c-4a13-8bba-c90a6a3a5b60" />
+        <option name="url" value="https://github.com/Marco220603/grupo01-TF-BACKEND" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,8 +64,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Marco/Desktop/APP-AW-FOUNDEMOTIONS/BACKEND/demo",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Marco/Desktop/BACKEND/demo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,6 +100,7 @@
       <workItem from="1699393912489" duration="974000" />
       <workItem from="1699396091603" duration="3194000" />
       <workItem from="1699399671048" duration="150000" />
+      <workItem from="1699400827396" duration="6387000" />
     </task>
     <servers />
   </component>
