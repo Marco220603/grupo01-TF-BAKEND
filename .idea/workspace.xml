@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/GenderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/GenderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/dtos/GenderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/dtos/GenderDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/entities/dato/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/entities/dato/Gender.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +105,7 @@
       <workItem from="1699393912489" duration="974000" />
       <workItem from="1699396091603" duration="3194000" />
       <workItem from="1699399671048" duration="150000" />
-      <workItem from="1699400827396" duration="8926000" />
+      <workItem from="1699400827396" duration="12296000" />
     </task>
     <servers />
   </component>

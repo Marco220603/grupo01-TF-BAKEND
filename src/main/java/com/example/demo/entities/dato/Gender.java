@@ -8,7 +8,7 @@ public class Gender {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idGender;
-    @Column(name = "name",nullable = false,length = 30)
+    @Column(name = "nameGender",nullable = false,length = 48)
     private String nameGender;
     // hopoa
     public Gender() {

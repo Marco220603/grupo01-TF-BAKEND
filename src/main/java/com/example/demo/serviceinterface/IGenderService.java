@@ -11,5 +11,5 @@ public interface IGenderService {
 
     public Gender listarId(int genderid);
 
-    List<Gender> listar();
+    public List<Gender> listar();
 }
