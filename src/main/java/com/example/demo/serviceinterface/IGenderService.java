@@ -7,9 +7,9 @@ import java.util.List;
 public interface IGenderService {
     public void insertar(Gender gender);
 
-    public void eliminar(int genderid);
+    public void eliminar(int idGender);
 
-    public Gender listarId(int genderid);
+    public Gender listarId(int idGender);
 
     public List<Gender> listar();
 }

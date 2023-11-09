@@ -7,20 +7,19 @@ public class GenderDTO {
 
     private String nameGender;
 
-    public int getId() {
+    public int getIdGender() {
         return idGender;
     }
 
-    public void setId(int id) {
-        this.idGender = id;
+    public void setIdGender(int idGender) {
+        this.idGender = idGender;
     }
 
-    public String getName() {
+    public String getNameGender() {
         return nameGender;
     }
 
-    public void setName(String name) {
-        this.nameGender = name;
+    public void setNameGender(String nameGender) {
+        this.nameGender = nameGender;
     }
-
 }

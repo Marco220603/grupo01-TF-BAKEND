@@ -15,24 +15,24 @@ public class Gender {
 
     }
 
-    public Gender(int id, String name) {
-        this.idGender = id;
-        this.nameGender = name;
+    public Gender(int idGender, String nameGender) {
+        this.idGender = idGender;
+        this.nameGender = nameGender;
     }
 
-    public int getId() {
+    public int getIdGender() {
         return idGender;
     }
 
-    public void setId(int id) {
-        this.idGender = id;
+    public void setIdGender(int idGender) {
+        this.idGender = idGender;
     }
 
-    public String getName() {
+    public String getNameGender() {
         return nameGender;
     }
 
-    public void setName(String name) {
-        this.nameGender = name;
+    public void setNameGender(String nameGender) {
+        this.nameGender = nameGender;
     }
 }
