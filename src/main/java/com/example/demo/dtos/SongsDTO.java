@@ -10,8 +10,9 @@ public class SongsDTO {
 
     private String title;
 
-    private Gender genderid;
     private Artist artistid;
+
+    private Gender genderid;
 
     public int getId() {
         return id;

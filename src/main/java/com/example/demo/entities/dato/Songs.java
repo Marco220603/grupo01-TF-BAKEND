@@ -11,14 +11,18 @@ public class Songs {
     @Column(name = "title",nullable = false,length = 30)
     private String title;
     @ManyToOne
+    @JoinColumn(name = "artistid")
+    private Artist artistid;
+    @ManyToOne
     @JoinColumn(name = "genderid")
     private Gender genderid;
     public Songs() {
     }
 
-    public Songs(int id, String title, Gender genderid) {
+    public Songs(int id, String title, Artist artistid, Gender genderid) {
         this.id = id;
         this.title = title;
+        this.artistid = artistid;
         this.genderid = genderid;
     }
 
@@ -36,6 +40,14 @@ public class Songs {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Artist getArtistid() {
+        return artistid;
+    }
+
+    public void setArtistid(Artist artistid) {
+        this.artistid = artistid;
     }
 
     public Gender getGenderid() {
