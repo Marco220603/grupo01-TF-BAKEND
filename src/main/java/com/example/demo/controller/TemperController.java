@@ -47,7 +47,6 @@ public class TemperController {
     }
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
     public List<TemperDTO> listar() {
         return sS.listar().stream().map(x->{
             ModelMapper m=new ModelMapper();

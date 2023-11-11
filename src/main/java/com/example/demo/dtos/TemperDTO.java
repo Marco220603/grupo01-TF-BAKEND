@@ -7,46 +7,43 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 public class TemperDTO {
-    private int id;
+    private int idtemper;
+    private String nametemper;
 
-    private String name;
-
-    private String description;
-
-    private Gender genderid;
-
+    private String descriptiontemper;
+    private Gender Gender;
     private int minScore;
 
-    public int getId() {
-        return id;
+    public int getIdtemper() {
+        return idtemper;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdtemper(int idtemper) {
+        this.idtemper = idtemper;
     }
 
-    public String getName() {
-        return name;
+    public String getNametemper() {
+        return nametemper;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNametemper(String nametemper) {
+        this.nametemper = nametemper;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptiontemper() {
+        return descriptiontemper;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptiontemper(String descriptiontemper) {
+        this.descriptiontemper = descriptiontemper;
     }
 
-    public Gender getGenderid() {
-        return genderid;
+    public com.example.demo.entities.dato.Gender getGender() {
+        return Gender;
     }
 
-    public void setGenderid(Gender genderid) {
-        this.genderid = genderid;
+    public void setGender(com.example.demo.entities.dato.Gender gender) {
+        Gender = gender;
     }
 
     public int getMinScore() {

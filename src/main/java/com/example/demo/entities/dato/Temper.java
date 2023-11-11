@@ -7,57 +7,58 @@ import javax.persistence.*;
 public class Temper {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    @Column(name = "name",nullable = false,length = 30)
-    private String name;
-    @Column(name = "description",nullable = false,length = 200)
-    private String description;
+    private int idtemper;
+    @Column(name = "nametemper",nullable = false,length = 30)
+    private String nametemper;
+    @Column(name = "descriptiontemper",nullable = false,length = 200)
+    private String descriptiontemper;
     @OneToOne
-    @JoinColumn(name = "genderid")
-    private Gender genderid;
+    @JoinColumn(name = "Gender")
+    private Gender Gender;
     @Column(name = "minScore",nullable = false)
     private int minScore;
 
     public Temper() {
     }
 
-    public Temper(int id, String name, String description, Gender genderid) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.genderid = genderid;
+    public Temper(int idtemper, String nametemper, String descriptiontemper, com.example.demo.entities.dato.Gender gender, int minScore) {
+        this.idtemper = idtemper;
+        this.nametemper = nametemper;
+        this.descriptiontemper = descriptiontemper;
+        Gender = gender;
+        this.minScore = minScore;
     }
 
-    public int getId() {
-        return id;
+    public int getIdtemper() {
+        return idtemper;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdtemper(int idtemper) {
+        this.idtemper = idtemper;
     }
 
-    public String getName() {
-        return name;
+    public String getNametemper() {
+        return nametemper;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNametemper(String nametemper) {
+        this.nametemper = nametemper;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptiontemper() {
+        return descriptiontemper;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptiontemper(String descriptiontemper) {
+        this.descriptiontemper = descriptiontemper;
     }
 
-    public Gender getGenderid() {
-        return genderid;
+    public com.example.demo.entities.dato.Gender getGender() {
+        return Gender;
     }
 
-    public void setGenderid(Gender genderid) {
-        this.genderid = genderid;
+    public void setGender(com.example.demo.entities.dato.Gender gender) {
+        Gender = gender;
     }
 
     public int getMinScore() {
