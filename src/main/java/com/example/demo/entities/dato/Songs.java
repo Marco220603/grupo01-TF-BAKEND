@@ -1,60 +1,73 @@
 package com.example.demo.entities.dato;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "Songs")
 public class Songs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idSong;
     @Column(name = "title",nullable = false,length = 30)
-    private String title;
+    private String nameSong;
     @ManyToOne
-    @JoinColumn(name = "artistid")
-    private Artist artistid;
+    @JoinColumn(name = "idGender")
+    private Gender idGender;
     @ManyToOne
-    @JoinColumn(name = "genderid")
-    private Gender genderid;
+    @JoinColumn(name = "idArtist")
+    private Artist idArtist;
+    @Column(name = "fechaSong",nullable = false)
+    private LocalDate fechaSong;
+
     public Songs() {
     }
 
-    public Songs(int id, String title, Artist artistid, Gender genderid) {
-        this.id = id;
-        this.title = title;
-        this.artistid = artistid;
-        this.genderid = genderid;
+    public Songs(int idSong, String nameSong, Gender idGender, Artist idArtist, LocalDate fechaSong) {
+        this.idSong = idSong;
+        this.nameSong = nameSong;
+        this.idGender = idGender;
+        this.idArtist = idArtist;
+        this.fechaSong = fechaSong;
     }
 
-    public int getId() {
-        return id;
+    public int getIdSong() {
+        return idSong;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdSong(int idSong) {
+        this.idSong = idSong;
     }
 
-    public String getTitle() {
-        return title;
+    public String getNameSong() {
+        return nameSong;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setNameSong(String nameSong) {
+        this.nameSong = nameSong;
     }
 
-    public Artist getArtistid() {
-        return artistid;
+    public Gender getIdGender() {
+        return idGender;
     }
 
-    public void setArtistid(Artist artistid) {
-        this.artistid = artistid;
+    public void setIdGender(Gender idGender) {
+        this.idGender = idGender;
     }
 
-    public Gender getGenderid() {
-        return genderid;
+    public Artist getIdArtist() {
+        return idArtist;
     }
 
-    public void setGenderid(Gender genderid) {
-        this.genderid = genderid;
+    public void setIdArtist(Artist idArtist) {
+        this.idArtist = idArtist;
+    }
+
+    public LocalDate getFechaSong() {
+        return fechaSong;
+    }
+
+    public void setFechaSong(LocalDate fechaSong) {
+        this.fechaSong = fechaSong;
     }
 }

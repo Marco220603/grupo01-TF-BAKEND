@@ -3,46 +3,57 @@ package com.example.demo.dtos;
 import com.example.demo.entities.dato.Artist;
 import com.example.demo.entities.dato.Gender;
 
-import java.util.List;
+
+import java.time.LocalDate;
 
 public class SongsDTO {
-    private int id;
+    private int idSong;
 
-    private String title;
+    private String nameSong;
 
-    private Artist artistid;
+    private Gender idGender;
 
-    private Gender genderid;
+    private Artist idArtist;
 
-    public int getId() {
-        return id;
+    private LocalDate fechaSong;
+
+    public int getIdSong() {
+        return idSong;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdSong(int idSong) {
+        this.idSong = idSong;
     }
 
-    public String getTitle() {
-        return title;
+    public String getNameSong() {
+        return nameSong;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setNameSong(String nameSong) {
+        this.nameSong = nameSong;
     }
 
-    public Gender getGenderid() {
-        return genderid;
+    public Gender getIdGender() {
+        return idGender;
     }
 
-    public void setGenderid(Gender genderid) {
-        this.genderid = genderid;
+    public void setIdGender(Gender idGender) {
+        this.idGender = idGender;
     }
 
-    public Artist getArtistid() {
-        return artistid;
+    public Artist getIdArtist() {
+        return idArtist;
     }
 
-    public void setArtistid(Artist artistid) {
-        this.artistid = artistid;
+    public void setIdArtist(Artist idArtist) {
+        this.idArtist = idArtist;
+    }
+
+    public LocalDate getFechaSong() {
+        return fechaSong;
+    }
+
+    public void setFechaSong(LocalDate fechaSong) {
+        this.fechaSong = fechaSong;
     }
 }

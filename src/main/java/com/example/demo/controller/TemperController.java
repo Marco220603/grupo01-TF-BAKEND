@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/temper")
+@RequestMapping("/temperamentos")
 public class TemperController {
     @Autowired
     private ITemperService sS;

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="" />
+    <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/SongsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/SongsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Songs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Songs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/ISongsServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/ISongsServiceImplements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/ISongsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/ISongsService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +111,7 @@
       <workItem from="1699660973964" duration="7246000" />
       <workItem from="1700011660201" duration="53000" />
       <workItem from="1700011783912" duration="2910000" />
-      <workItem from="1700107411327" duration="311000" />
+      <workItem from="1700107411327" duration="633000" />
     </task>
     <servers />
   </component>

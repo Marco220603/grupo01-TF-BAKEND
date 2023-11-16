@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/playlist")
+@RequestMapping("/reproducciones")
 public class PlaylistInUserController {
     @Autowired
     private IPlaylistInUserService puS;

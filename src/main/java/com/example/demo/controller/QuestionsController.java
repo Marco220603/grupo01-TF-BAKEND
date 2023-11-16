@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/questions")
+@RequestMapping("/preguntas")
 public class QuestionsController {
     @Autowired
     private IQuestionsService qS;

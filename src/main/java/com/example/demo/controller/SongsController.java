@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/songs")
+@RequestMapping("/canciones")
 public class SongsController {
     @Autowired
     private ISongsService sS;

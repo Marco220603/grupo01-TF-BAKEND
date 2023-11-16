@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/artist")
+@RequestMapping("/artistas")
 public class ArtistController {
     @Autowired
     private IArtistService aS;

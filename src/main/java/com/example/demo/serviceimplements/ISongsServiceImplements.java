@@ -18,13 +18,13 @@ public class ISongsServiceImplements implements ISongsService {
     }
 
     @Override
-    public void eliminar(int idsongs) {
-        sR.deleteById(idsongs);
+    public void eliminar(int idSong) {
+        sR.deleteById(idSong);
     }
 
     @Override
-    public Songs listarId(int idsoongs) {
-        return sR.findById(idsoongs).orElse(new Songs());
+    public Songs listarId(int idSong) {
+        return sR.findById(idSong).orElse(new Songs());
     }
 
     @Override

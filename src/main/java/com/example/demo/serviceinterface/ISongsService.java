@@ -7,9 +7,9 @@ import java.util.List;
 public interface ISongsService {
     public void insertar(Songs songs);
 
-    public void eliminar(int idsongs);
+    public void eliminar(int idSong);
 
-    public Songs listarId(int idsoongs);
+    public Songs listarId(int idSong);
 
     List<Songs> listar();
 }
