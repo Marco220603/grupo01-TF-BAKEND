@@ -3,26 +3,29 @@ package com.example.demo.dtos;
 
 import com.example.demo.entities.dato.Gender;
 
-public class ArtistDTO {
-    private int id;
 
-    private String name;
+
+public class ArtistDTO {
+    private int idartist;
+
+    private String nameartist;
+
     private Gender genderid;
 
-    public int getId() {
-        return id;
+    public int getIdartist() {
+        return idartist;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdartist(int idartist) {
+        this.idartist = idartist;
     }
 
-    public String getName() {
-        return name;
+    public String getNameartist() {
+        return nameartist;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameartist(String nameartist) {
+        this.nameartist = nameartist;
     }
 
     public Gender getGenderid() {

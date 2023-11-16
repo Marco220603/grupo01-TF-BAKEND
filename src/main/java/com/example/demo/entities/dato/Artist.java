@@ -7,44 +7,44 @@ import javax.persistence.*;
 public class Artist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int idartist;
     @Column(name = "name",nullable = false,length = 30)
-    private String name;
+    private String nameartist;
 
     @ManyToOne
-    private Gender gender_id;
+    private Gender genderid;
 
 
     public Artist() {
     }
 
-    public Artist(int id, String name, Gender gender_id) {
-        this.id = id;
-        this.name = name;
-        this.gender_id = gender_id;
+    public Artist(int idartist, String nameartist, Gender genderid) {
+        this.idartist = idartist;
+        this.nameartist = nameartist;
+        this.genderid = genderid;
     }
 
-    public int getId() {
-        return id;
+    public int getIdartist() {
+        return idartist;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdartist(int idartist) {
+        this.idartist = idartist;
     }
 
-    public String getName() {
-        return name;
+    public String getNameartist() {
+        return nameartist;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameartist(String nameartist) {
+        this.nameartist = nameartist;
     }
 
-    public Gender getGender_id() {
-        return gender_id;
+    public Gender getGenderid() {
+        return genderid;
     }
 
-    public void setGender_id(Gender gender_id) {
-        this.gender_id = gender_id;
+    public void setGenderid(Gender genderid) {
+        this.genderid = genderid;
     }
 }
