@@ -12,21 +12,21 @@ public class Temper {
     private String nametemper;
     @Column(name = "descriptiontemper",nullable = false,length = 200)
     private String descriptiontemper;
-    @OneToOne
-    @JoinColumn(name = "Gender")
-    private Gender Gender;
     @Column(name = "minScore",nullable = false)
     private int minScore;
+    @ManyToOne
+    @JoinColumn(name = "idGender",nullable = false)
+    private Gender gender;
 
     public Temper() {
     }
 
-    public Temper(int idtemper, String nametemper, String descriptiontemper, com.example.demo.entities.dato.Gender gender, int minScore) {
+    public Temper(int idtemper, String nametemper, String descriptiontemper, int minScore, Gender gender) {
         this.idtemper = idtemper;
         this.nametemper = nametemper;
         this.descriptiontemper = descriptiontemper;
-        Gender = gender;
         this.minScore = minScore;
+        this.gender = gender;
     }
 
     public int getIdtemper() {
@@ -53,19 +53,19 @@ public class Temper {
         this.descriptiontemper = descriptiontemper;
     }
 
-    public com.example.demo.entities.dato.Gender getGender() {
-        return Gender;
-    }
-
-    public void setGender(com.example.demo.entities.dato.Gender gender) {
-        Gender = gender;
-    }
-
     public int getMinScore() {
         return minScore;
     }
 
     public void setMinScore(int minScore) {
         this.minScore = minScore;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }

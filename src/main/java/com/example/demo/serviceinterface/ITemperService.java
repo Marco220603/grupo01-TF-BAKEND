@@ -11,5 +11,5 @@ public interface ITemperService {
 
     public Temper listarId(int idtemper);
 
-    List<Temper> listar();
+    public List<Temper> listar();
 }

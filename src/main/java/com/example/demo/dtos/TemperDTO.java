@@ -11,8 +11,8 @@ public class TemperDTO {
     private String nametemper;
 
     private String descriptiontemper;
-    private Gender Gender;
     private int minScore;
+    private Gender gender;
 
     public int getIdtemper() {
         return idtemper;
@@ -38,19 +38,19 @@ public class TemperDTO {
         this.descriptiontemper = descriptiontemper;
     }
 
-    public com.example.demo.entities.dato.Gender getGender() {
-        return Gender;
-    }
-
-    public void setGender(com.example.demo.entities.dato.Gender gender) {
-        Gender = gender;
-    }
-
     public int getMinScore() {
         return minScore;
     }
 
     public void setMinScore(int minScore) {
         this.minScore = minScore;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }

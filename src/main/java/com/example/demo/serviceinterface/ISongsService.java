@@ -11,5 +11,5 @@ public interface ISongsService {
 
     public Songs listarId(int idSong);
 
-    List<Songs> listar();
+    public List<Songs> listar();
 }

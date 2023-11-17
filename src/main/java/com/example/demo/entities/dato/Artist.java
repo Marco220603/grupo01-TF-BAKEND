@@ -12,6 +12,7 @@ public class Artist {
     private String nameartist;
 
     @ManyToOne
+    @JoinColumn(name = "idGender")
     private Gender genderid;
 
 
