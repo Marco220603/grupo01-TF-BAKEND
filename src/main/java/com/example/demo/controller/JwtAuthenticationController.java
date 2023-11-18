@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.dtos.UserRegistrationRequestDTO;
+import com.example.demo.entities.dato.User;
 import com.example.demo.security.JwtRequest;
 import com.example.demo.security.JwtResponse;
 import com.example.demo.security.JwtTokenUtil;
@@ -39,6 +41,20 @@ public class JwtAuthenticationController {
             throw new Exception("USER_DISABLED", e);
         } catch (BadCredentialsException e) {
             throw new Exception("INVALID_CREDENTIALS", e);
+        }
+    }
+
+    @PostMapping("/register")
+    public ResponseEntity<?> registerUser(@RequestBody UserRegistrationRequestDTO registrationRequestDTO){
+        try {
+            User newUser = userDetailsService.registroUser(registrationRequestDTO.getUsername(),registrationRequestDTO.getPassword());
+
+            UserDetails userDetails = userDetailsService.loadUserByUsername(newUser.getUsername());
+            String token = jwtTokenUtil.generateToken(userDetails);
+
+            return ResponseEntity.ok(new JwtResponse(token));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body("Error al registrar el usuario:" + e.getMessage());
         }
     }
 }

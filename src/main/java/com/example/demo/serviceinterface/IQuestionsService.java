@@ -11,7 +11,7 @@ public interface IQuestionsService {
 
     public Questions listarId(int idquestions);
 
-    List<Questions> listar();
+    public List<Questions> listar();
 
     public List<String[]>calcularTemper();
 }

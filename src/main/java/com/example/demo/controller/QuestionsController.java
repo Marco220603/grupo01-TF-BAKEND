@@ -48,7 +48,6 @@ public class QuestionsController {
     }
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
     public List<QuestionsDTO> listar() {
         return qS.listar().stream().map(x->{
             ModelMapper m=new ModelMapper();
@@ -57,7 +56,6 @@ public class QuestionsController {
         }).collect(Collectors.toList());
     }
     @GetMapping("/calculartemper")
-    @PreAuthorize("hasAuthority('ADMIN')")
     public List<CalcularTemperDTO> calculartemper(){
         List<String[]> calculartemper = qS.calcularTemper();
         List<CalcularTemperDTO> calcularTemperDTOS = new ArrayList<>();
