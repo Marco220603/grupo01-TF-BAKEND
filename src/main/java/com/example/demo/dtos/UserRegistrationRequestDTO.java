@@ -7,6 +7,7 @@ public class UserRegistrationRequestDTO {
     public UserRegistrationRequestDTO() {
     }
 
+
     public UserRegistrationRequestDTO(String username, String password) {
         this.username = username;
         this.password = password;
