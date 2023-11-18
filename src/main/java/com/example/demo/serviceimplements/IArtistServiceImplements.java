@@ -18,13 +18,13 @@ public class IArtistServiceImplements implements IArtistService {
     }
 
     @Override
-    public void eliminar(int idartist) {
-        aR.deleteById(idartist);
+    public void eliminar(int idArtist) {
+        aR.deleteById(idArtist);
     }
 
     @Override
-    public Artist listarId(int idartist) {
-        return aR.findById(idartist).orElse(new Artist());
+    public Artist listarId(int idArtist) {
+        return aR.findById(idArtist).orElse(new Artist());
     }
 
     @Override

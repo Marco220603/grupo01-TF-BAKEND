@@ -33,19 +33,16 @@ public class TemperController {
         Temper pu = m.map(dto, Temper.class);
         sS.insertar(pu);
     }
-
     @DeleteMapping("/{id}")
     public void eliminar(@PathVariable("id") Integer id) {
         sS.eliminar(id);
     }
-
     @GetMapping("/{id}")
     public TemperDTO listarId(@PathVariable("id") Integer id) {
         ModelMapper m=new ModelMapper();
         TemperDTO dto=m.map(sS.listarId(id),TemperDTO.class);
         return dto;
     }
-
     @GetMapping
     public List<TemperDTO> listar() {
         return sS.listar().stream().map(x->{

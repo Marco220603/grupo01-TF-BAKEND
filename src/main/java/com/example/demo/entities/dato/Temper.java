@@ -7,50 +7,47 @@ import javax.persistence.*;
 public class Temper {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idtemper;
-    @Column(name = "nametemper",nullable = false,length = 30)
-    private String nametemper;
-    @Column(name = "descriptiontemper",nullable = false,length = 200)
-    private String descriptiontemper;
+    private int idTemper;
+    @Column(name = "nameTemper",nullable = false,length = 30)
+    private String nameTemper;
+    @Column(name = "descriptionTemper",nullable = false,length = 200)
+    private String descriptionTemper;
     @Column(name = "minScore",nullable = false)
     private int minScore;
     @ManyToOne
     @JoinColumn(name = "idGender",nullable = false)
     private Gender gender;
-
     public Temper() {
     }
-
-    public Temper(int idtemper, String nametemper, String descriptiontemper, int minScore, Gender gender) {
-        this.idtemper = idtemper;
-        this.nametemper = nametemper;
-        this.descriptiontemper = descriptiontemper;
+    public Temper(int idTemper, String nameTemper, String descriptionTemper, int minScore, Gender gender) {
+        this.idTemper = idTemper;
+        this.nameTemper = nameTemper;
+        this.descriptionTemper = descriptionTemper;
         this.minScore = minScore;
         this.gender = gender;
     }
-
-    public int getIdtemper() {
-        return idtemper;
+    public int getIdTemper() {
+        return idTemper;
     }
 
-    public void setIdtemper(int idtemper) {
-        this.idtemper = idtemper;
+    public void setIdTemper(int idTemper) {
+        this.idTemper = idTemper;
     }
 
-    public String getNametemper() {
-        return nametemper;
+    public String getNameTemper() {
+        return nameTemper;
     }
 
-    public void setNametemper(String nametemper) {
-        this.nametemper = nametemper;
+    public void setNameTemper(String nameTemper) {
+        this.nameTemper = nameTemper;
     }
 
-    public String getDescriptiontemper() {
-        return descriptiontemper;
+    public String getDescriptionTemper() {
+        return descriptionTemper;
     }
 
-    public void setDescriptiontemper(String descriptiontemper) {
-        this.descriptiontemper = descriptiontemper;
+    public void setDescriptionTemper(String descriptionTemper) {
+        this.descriptionTemper = descriptionTemper;
     }
 
     public int getMinScore() {

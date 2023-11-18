@@ -4,38 +4,38 @@ import com.example.demo.entities.dato.Gender;
 
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
 public class TemperDTO {
-    private int idtemper;
-    private String nametemper;
-
-    private String descriptiontemper;
+    private int idTemper;
+    private String nameTemper;
+    private String descriptionTemper;
     private int minScore;
     private Gender gender;
 
-    public int getIdtemper() {
-        return idtemper;
+    public int getIdTemper() {
+        return idTemper;
     }
 
-    public void setIdtemper(int idtemper) {
-        this.idtemper = idtemper;
+    public void setIdTemper(int idTemper) {
+        this.idTemper = idTemper;
     }
 
-    public String getNametemper() {
-        return nametemper;
+    public String getNameTemper() {
+        return nameTemper;
     }
 
-    public void setNametemper(String nametemper) {
-        this.nametemper = nametemper;
+    public void setNameTemper(String nameTemper) {
+        this.nameTemper = nameTemper;
     }
 
-    public String getDescriptiontemper() {
-        return descriptiontemper;
+    public String getDescriptionTemper() {
+        return descriptionTemper;
     }
 
-    public void setDescriptiontemper(String descriptiontemper) {
-        this.descriptiontemper = descriptiontemper;
+    public void setDescriptionTemper(String descriptionTemper) {
+        this.descriptionTemper = descriptionTemper;
     }
 
     public int getMinScore() {

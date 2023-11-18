@@ -7,9 +7,9 @@ import java.util.List;
 public interface IArtistService {
     public void insertar(Artist artist);
 
-    public void eliminar(int idartist);
+    public void eliminar(int idArtist);
 
-    public Artist listarId(int idartist);
+    public Artist listarId(int idArtist);
 
-    List<Artist> listar();
+    public List<Artist> listar();
 }

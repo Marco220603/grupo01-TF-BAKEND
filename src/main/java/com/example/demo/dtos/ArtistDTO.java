@@ -3,36 +3,37 @@ package com.example.demo.dtos;
 
 import com.example.demo.entities.dato.Gender;
 
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 
 public class ArtistDTO {
-    private int idartist;
+    private int idArtist;
+    private String nameArtist;
+    private Gender gender;
 
-    private String nameartist;
-
-    private Gender genderid;
-
-    public int getIdartist() {
-        return idartist;
+    public int getIdArtist() {
+        return idArtist;
     }
 
-    public void setIdartist(int idartist) {
-        this.idartist = idartist;
+    public void setIdArtist(int idArtist) {
+        this.idArtist = idArtist;
     }
 
-    public String getNameartist() {
-        return nameartist;
+    public String getNameArtist() {
+        return nameArtist;
     }
 
-    public void setNameartist(String nameartist) {
-        this.nameartist = nameartist;
+    public void setNameArtist(String nameArtist) {
+        this.nameArtist = nameArtist;
     }
 
-    public Gender getGenderid() {
-        return genderid;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setGenderid(Gender genderid) {
-        this.genderid = genderid;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
