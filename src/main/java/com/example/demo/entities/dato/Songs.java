@@ -9,25 +9,25 @@ public class Songs {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idSong;
-    @Column(name = "title",nullable = false,length = 30)
+    @Column(name = "nameSong",nullable = false,length = 30)
     private String nameSong;
     @ManyToOne
     @JoinColumn(name = "idGender")
-    private Gender idGender;
+    private Gender gender;
     @ManyToOne
     @JoinColumn(name = "idArtist")
-    private Artist idArtist;
+    private Artist artist;
     @Column(name = "fechaSong",nullable = false)
     private LocalDate fechaSong;
 
     public Songs() {
     }
 
-    public Songs(int idSong, String nameSong, Gender idGender, Artist idArtist, LocalDate fechaSong) {
+    public Songs(int idSong, String nameSong, Gender gender, Artist artist, LocalDate fechaSong) {
         this.idSong = idSong;
         this.nameSong = nameSong;
-        this.idGender = idGender;
-        this.idArtist = idArtist;
+        this.gender = gender;
+        this.artist = artist;
         this.fechaSong = fechaSong;
     }
 
@@ -47,20 +47,20 @@ public class Songs {
         this.nameSong = nameSong;
     }
 
-    public Gender getIdGender() {
-        return idGender;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setIdGender(Gender idGender) {
-        this.idGender = idGender;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
-    public Artist getIdArtist() {
-        return idArtist;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setIdArtist(Artist idArtist) {
-        this.idArtist = idArtist;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public LocalDate getFechaSong() {

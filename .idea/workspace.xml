@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TemperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TemperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/ArtistDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/ArtistDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/TemperDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/TemperDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Temper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Temper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/IArtistServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/IArtistServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/IArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/IArtistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/serviceimplements/IArtistServiceImplements.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/serviceimplements/IArtistServiceImplements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/SongsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/SongsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Songs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/dato/Songs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +113,7 @@
       <workItem from="1700011783912" duration="2910000" />
       <workItem from="1700107411327" duration="3400000" />
       <workItem from="1700139281752" duration="16770000" />
-      <workItem from="1700267325486" duration="4556000" />
+      <workItem from="1700267325486" duration="5115000" />
     </task>
     <servers />
   </component>

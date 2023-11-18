@@ -4,6 +4,9 @@ import com.example.demo.entities.dato.Artist;
 import com.example.demo.entities.dato.Gender;
 
 
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 
 public class SongsDTO {
@@ -11,9 +14,9 @@ public class SongsDTO {
 
     private String nameSong;
 
-    private Gender idGender;
+    private Gender gender;
 
-    private Artist idArtist;
+    private Artist artist;
 
     private LocalDate fechaSong;
 
@@ -33,20 +36,20 @@ public class SongsDTO {
         this.nameSong = nameSong;
     }
 
-    public Gender getIdGender() {
-        return idGender;
+    public Gender getGender() {
+        return gender;
     }
 
-    public void setIdGender(Gender idGender) {
-        this.idGender = idGender;
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
-    public Artist getIdArtist() {
-        return idArtist;
+    public Artist getArtist() {
+        return artist;
     }
 
-    public void setIdArtist(Artist idArtist) {
-        this.idArtist = idArtist;
+    public void setArtist(Artist artist) {
+        this.artist = artist;
     }
 
     public LocalDate getFechaSong() {
