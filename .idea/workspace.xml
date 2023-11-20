@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc43ab64-9d81-452a-b694-91cb0aee44f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/dtos/TemperConMayorPuntajeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/PlaylistinuserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/PlaylistinuserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TemperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/TemperController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/entitys/SongsinPlaylistOfUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/entities/entitys/SongsinPlaylistOfUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ITemperRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/ITemperRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/IPlaylistinuserServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/IPlaylistinuserServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/ITemperServiceImplements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceimplements/ITemperServiceImplements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/IPlaylistinuserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/IPlaylistinuserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/ITemperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/serviceinterface/ITemperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/repository/ITemperRepository.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +112,7 @@
       <workItem from="1700107411327" duration="3400000" />
       <workItem from="1700139281752" duration="16770000" />
       <workItem from="1700267325486" duration="28927000" />
-      <workItem from="1700444015993" duration="5510000" />
+      <workItem from="1700444015993" duration="5843000" />
     </task>
     <servers />
   </component>
