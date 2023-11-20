@@ -1,11 +1,10 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.dtos.PlaylistInUserDTO;
+import com.example.demo.dtos.PlaylistinuserDTO;
 
-import com.example.demo.entities.entitys.PlaylistInUser;
-
-import com.example.demo.serviceinterface.IPlaylistInUserService;
+import com.example.demo.entities.entitys.Playlistinuser;
+import com.example.demo.serviceinterface.IPlaylistinuserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -16,21 +15,21 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/reproducciones")
-public class PlaylistInUserController {
+public class PlaylistinuserController {
     @Autowired
-    private IPlaylistInUserService puS;
+    private IPlaylistinuserService puS;
 
     @PostMapping
-    public void registrar(@RequestBody PlaylistInUserDTO dto){
+    public void registrar(@RequestBody PlaylistinuserDTO dto){
         ModelMapper m = new ModelMapper();
-        PlaylistInUser pu = m.map(dto,PlaylistInUser.class);
+        Playlistinuser pu = m.map(dto,Playlistinuser.class);
         puS.insertar(pu);
     }
 
     @PutMapping
-    public void modificar(@RequestBody PlaylistInUserDTO dto) {
+    public void modificar(@RequestBody PlaylistinuserDTO dto) {
         ModelMapper m = new ModelMapper();
-        PlaylistInUser pu = m.map(dto, PlaylistInUser.class);
+        Playlistinuser pu = m.map(dto, Playlistinuser.class);
         puS.insertar(pu);
     }
 
@@ -40,18 +39,18 @@ public class PlaylistInUserController {
     }
 
     @GetMapping("/{id}")
-    public PlaylistInUserDTO listarId(@PathVariable("id") Integer id) {
+    public PlaylistinuserDTO listarId(@PathVariable("id") Integer id) {
         ModelMapper m=new ModelMapper();
-        PlaylistInUserDTO dto=m.map(puS.listarId(id),PlaylistInUserDTO.class);
+        PlaylistinuserDTO dto=m.map(puS.listarId(id),PlaylistinuserDTO.class);
         return dto;
     }
 
     @GetMapping
-    @PreAuthorize("hasAuthority('ADMIN')")
-    public List<PlaylistInUserDTO> listar() {
+    @PreAuthorize("hasAuthority('USER')")
+    public List<PlaylistinuserDTO> listar() {
         return puS.listar().stream().map(x->{
             ModelMapper m=new ModelMapper();
-            return m.map(x,PlaylistInUserDTO.class);
+            return m.map(x,PlaylistinuserDTO.class);
 
         }).collect(Collectors.toList());
     }

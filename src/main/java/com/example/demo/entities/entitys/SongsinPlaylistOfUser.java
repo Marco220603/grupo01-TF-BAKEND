@@ -11,8 +11,8 @@ public class SongsinPlaylistOfUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @OneToOne
-    @JoinColumn(name = "playlistInUserid")
-    private PlaylistInUser playlistInUserid;
+    @JoinColumn(name = "playlistinuserid")
+    private Playlistinuser playlistinuserid;
     @ManyToOne
     @JoinColumn(name = "songsid")
     private Songs songsid;
@@ -20,9 +20,9 @@ public class SongsinPlaylistOfUser {
     public SongsinPlaylistOfUser() {
     }
 
-    public SongsinPlaylistOfUser(int id, PlaylistInUser playlistInUserid, Songs songsid) {
+    public SongsinPlaylistOfUser(int id, Playlistinuser playlistInUserid, Songs songsid) {
         this.id = id;
-        this.playlistInUserid = playlistInUserid;
+        this.playlistinuserid = playlistinuserid;
         this.songsid = songsid;
     }
 
@@ -34,12 +34,12 @@ public class SongsinPlaylistOfUser {
         this.id = id;
     }
 
-    public PlaylistInUser getPlaylistInUserid() {
-        return playlistInUserid;
+    public Playlistinuser getPlaylistInUserid() {
+        return playlistinuserid;
     }
 
-    public void setPlaylistInUserid(PlaylistInUser playlistInUserid) {
-        this.playlistInUserid = playlistInUserid;
+    public void setPlaylistInUserid(Playlistinuser playlistinuserid) {
+        this.playlistinuserid = playlistinuserid;
     }
 
     public Songs getSongsid() {

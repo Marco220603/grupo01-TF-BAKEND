@@ -4,7 +4,7 @@ import com.example.demo.entities.dato.User;
 
 
 
-public class PlaylistInUserDTO {
+public class PlaylistinuserDTO {
     private int idPlaylistinuser;
 
     private String namePlaylistinuser;
