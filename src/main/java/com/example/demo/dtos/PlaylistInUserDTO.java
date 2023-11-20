@@ -5,36 +5,36 @@ import com.example.demo.entities.dato.User;
 
 
 public class PlaylistInUserDTO {
-    private int id;
+    private int idPlaylistinuser;
 
-    private String name;
+    private String namePlaylistinuser;
 
-    private String description;
+    private String descriptionPlaylistinuser;
 
     private User userid;
 
-    public int getId() {
-        return id;
+    public int getIdPlaylistinuser() {
+        return idPlaylistinuser;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdPlaylistinuser(int idPlaylistinuser) {
+        this.idPlaylistinuser = idPlaylistinuser;
     }
 
-    public String getName() {
-        return name;
+    public String getNamePlaylistinuser() {
+        return namePlaylistinuser;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNamePlaylistinuser(String namePlaylistinuser) {
+        this.namePlaylistinuser = namePlaylistinuser;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptionPlaylistinuser() {
+        return descriptionPlaylistinuser;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptionPlaylistinuser(String descriptionPlaylistinuser) {
+        this.descriptionPlaylistinuser = descriptionPlaylistinuser;
     }
 
     public User getUserid() {
