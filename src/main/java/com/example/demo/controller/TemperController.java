@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.dtos.SongsDTO;
+import com.example.demo.dtos.TemperConMayorPuntajeDTO;
 import com.example.demo.dtos.TemperDTO;
 import com.example.demo.entities.dato.Songs;
 import com.example.demo.entities.dato.Temper;
@@ -11,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -50,5 +52,18 @@ public class TemperController {
             return m.map(x,TemperDTO.class);
 
         }).collect(Collectors.toList());
+    }
+    @GetMapping("/TemperConMayorPuntaje")
+    public List<TemperConMayorPuntajeDTO> TemperConMayorPuntaje(){
+        List<String[]> TemperConMayorPuntaje = sS.TemperConMayorPuntaje();
+        List<TemperConMayorPuntajeDTO> TemperConMayorPuntajeDTOS = new ArrayList<>();
+        for (String[] data: TemperConMayorPuntaje){
+            TemperConMayorPuntajeDTO dto = new TemperConMayorPuntajeDTO();
+            dto.setName(data[0]);
+            dto.setTotalscore(Integer.parseInt(data[1]));
+            dto.setTemper(data[2]);
+            TemperConMayorPuntajeDTOS.add(dto);
+        }
+        return TemperConMayorPuntajeDTOS;
     }
 }

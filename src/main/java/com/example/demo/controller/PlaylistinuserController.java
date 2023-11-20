@@ -1,8 +1,10 @@
 package com.example.demo.controller;
 
 
+import com.example.demo.dtos.CalcularTemperDTO;
 import com.example.demo.dtos.PlaylistinuserDTO;
 
+import com.example.demo.dtos.TemperConMayorPuntajeDTO;
 import com.example.demo.entities.entitys.Playlistinuser;
 import com.example.demo.serviceinterface.IPlaylistinuserService;
 import org.modelmapper.ModelMapper;
@@ -10,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,4 +57,5 @@ public class PlaylistinuserController {
 
         }).collect(Collectors.toList());
     }
+
 }

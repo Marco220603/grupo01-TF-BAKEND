@@ -32,4 +32,8 @@ public class ITemperServiceImplements implements ITemperService {
     public List<Temper> listar() {
         return tS.findAll();
     }
+
+    public List<String[]> TemperConMayorPuntaje() {
+        return tS.TemperConMayorPuntaje();
+    }
 }

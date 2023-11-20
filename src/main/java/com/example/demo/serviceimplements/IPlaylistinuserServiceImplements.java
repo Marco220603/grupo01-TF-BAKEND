@@ -32,4 +32,5 @@ public class IPlaylistinuserServiceImplements implements IPlaylistinuserService 
     public List<Playlistinuser> listar() {
         return puR.findAll();
     }
+
 }

@@ -12,4 +12,5 @@ public interface IPlaylistinuserService {
     public Playlistinuser listarId(int idplaylistinuser);
 
     List<Playlistinuser> listar();
+    
 }

@@ -12,4 +12,6 @@ public interface ITemperService {
     public Temper listarId(int idtemper);
 
     public List<Temper> listar();
+
+    public List<String[]>TemperConMayorPuntaje();
 }

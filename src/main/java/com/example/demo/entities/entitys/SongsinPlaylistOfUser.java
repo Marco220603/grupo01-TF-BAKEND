@@ -20,7 +20,7 @@ public class SongsinPlaylistOfUser {
     public SongsinPlaylistOfUser() {
     }
 
-    public SongsinPlaylistOfUser(int id, Playlistinuser playlistInUserid, Songs songsid) {
+    public SongsinPlaylistOfUser(int id, Playlistinuser playlistinuserid, Songs songsid) {
         this.id = id;
         this.playlistinuserid = playlistinuserid;
         this.songsid = songsid;
@@ -38,7 +38,7 @@ public class SongsinPlaylistOfUser {
         return playlistinuserid;
     }
 
-    public void setPlaylistInUserid(Playlistinuser playlistinuserid) {
+    public void setPlaylistinuserid(Playlistinuser playlistinuserid) {
         this.playlistinuserid = playlistinuserid;
     }
 
